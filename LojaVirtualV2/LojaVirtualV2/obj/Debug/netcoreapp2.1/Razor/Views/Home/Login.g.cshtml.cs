@@ -66,7 +66,7 @@ namespace AspNetCore
                         ");
             EndContext();
             BeginContext(479, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "298ef7f7e3264c989e43a6330dbc1fc6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8b903ef0d274a18b74b172cb50cecef", async() => {
                 BeginContext(556, 7, true);
                 WriteLiteral("Sign up");
                 EndContext();
