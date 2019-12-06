@@ -12,8 +12,19 @@ namespace LojaVirtualV2.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index([FromForm]NewLetterEmail newEmail)
+        {
+            // TODO - Adicção no banco de dados
+
+            // TODO - Validação
+
             return View();
         }
 
