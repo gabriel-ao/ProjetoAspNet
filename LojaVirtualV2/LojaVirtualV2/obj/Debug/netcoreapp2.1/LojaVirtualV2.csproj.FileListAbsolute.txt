@@ -28,7 +28,6 @@ Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\bin\Debug\netcoreapp2.1\Loja
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\bin\Debug\netcoreapp2.1\LojaVirtualV2.pdb
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\bin\Debug\netcoreapp2.1\LojaVirtualV2.Views.dll
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\bin\Debug\netcoreapp2.1\LojaVirtualV2.Views.pdb
-Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csprojAssemblyReference.cache
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.Libraries.Lang.Mensagem.resources
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csproj.GenerateResource.cache
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csproj.CoreCompileInputs.cache
@@ -53,3 +52,5 @@ Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Loja
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.dll
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.pdb
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csproj.CopyComplete
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csprojAssemblyReference.cache
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs

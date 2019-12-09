@@ -13,7 +13,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 3 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\_ViewImports.cshtml"
+using LojaVirtualV2.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ff100287165d3dc7d8998bdc05f149a7a0e557c1", @"/Views/Home/Login.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"816eed92de902cb8b0a899dd4f902922402c6c9f", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/Home/CadastroCliente"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -37,6 +43,8 @@ namespace AspNetCore
             }
         }
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -66,7 +74,7 @@ namespace AspNetCore
                         ");
             EndContext();
             BeginContext(479, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e5af49724504214ba962a19b8c48fce", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b244edba226841b99c0e5ccd30d73d2a", async() => {
                 BeginContext(556, 7, true);
                 WriteLiteral("Sign up");
                 EndContext();
@@ -84,10 +92,13 @@ namespace AspNetCore
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             EndContext();
-            BeginContext(567, 1460, true);
-            WriteLiteral(@"
-                        <h4 class=""card-title mb-4 mt-1"">Sign in</h4>
-                        <form>
+            BeginContext(567, 97, true);
+            WriteLiteral("\r\n                        <h4 class=\"card-title mb-4 mt-1\">Sign in</h4>\r\n                        ");
+            EndContext();
+            BeginContext(664, 1203, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a24a2f48a96f41b2808468113b956571", async() => {
+                BeginContext(670, 1190, true);
+                WriteLiteral(@"
                             <div class=""form-group"">
                                 <label>Your email</label>
                                 <input name="""" class=""form-control"" placeholder=""Email"" type=""email"">
@@ -101,19 +112,27 @@ namespace AspNetCore
                                 <div class=""checkbox"">
                                     <label> <input type=""checkbox""> Save password </label>
                                 </div> <!-- checkbox .// -->
-                            </d");
-            WriteLiteral(@"iv> <!-- form-group// -->
-                            <div class=""form-group"">
-                                <button type=""submit"" class=""btn btn-primary btn-block""> Login </button>
                             </div> <!-- form-group// -->
-                        </form>
-                    </article>
-                </div> <!-- card.// -->
-            </div> <!-- code-wrap.// -->
-        </aside>
-    </section>
-</main>
-");
+                            <div class=""form-group"">
+                      ");
+                WriteLiteral("          <button type=\"submit\" class=\"btn btn-primary btn-block\"> Login </button>\r\n                            </div> <!-- form-group// -->\r\n                        ");
+                EndContext();
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(1867, 160, true);
+            WriteLiteral("\r\n                    </article>\r\n                </div> <!-- card.// -->\r\n            </div> <!-- code-wrap.// -->\r\n        </aside>\r\n    </section>\r\n</main>\r\n");
             EndContext();
         }
         #pragma warning restore 1998

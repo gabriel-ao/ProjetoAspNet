@@ -1,17 +1,23 @@
-﻿using LojaVirtualV2.Libraries.Email;
+﻿using LojaVirtualV2.Database;
+using LojaVirtualV2.Libraries.Email;
 using LojaVirtualV2.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace LojaVirtualV2.Controllers
 {
     public class HomeController : Controller
     {
+        private LojaVirtualContext _banco;
+        public HomeController(LojaVirtualContext banco)
+        {
+            _banco = banco;
+        }
+
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -19,13 +25,22 @@ namespace LojaVirtualV2.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index([FromForm]NewLetterEmail newEmail)
+        public IActionResult Index([FromForm]NewLetterEmail newsletter)
         {
-            // TODO - Adicção no banco de dados
+            if (ModelState.IsValid)
+            {
+                // TODO - Adicção no banco de dados
+                _banco.NewLetterEmail.Add(newsletter);
+                _banco.SaveChanges();
 
-            // TODO - Validação
+                TempData["MSG_S"] = "E-mail cadastrado! Agora você vai receber promoções especiais no seu e-mail! Fiquei atento as novidades";
 
-            return View();
+                return View();
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult Contato()
@@ -43,6 +58,7 @@ namespace LojaVirtualV2.Controllers
                 contato.Nome = HttpContext.Request.Form["nome"];
                 contato.Email = HttpContext.Request.Form["email"];
                 contato.Texto = HttpContext.Request.Form["texto"];
+
 
                 var listaMensagens = new List<ValidationResult>();
                 var contexto = new ValidationContext(contato);
@@ -82,9 +98,32 @@ namespace LojaVirtualV2.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult CadastroCliente()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult CadastroCliente([FromForm] Cliente cliente)
+        {
+            if (ModelState.IsValid)
+            {
+                _banco.Add(cliente);
+                _banco.SaveChanges();
+
+                TempData["MSG_S"] = "Cadastro realizado com sucesso!";
+
+                //TODO - implementar redirecionamentos diferentes (painel, carrinho de compra rtc).
+
+
+                return View(nameof(CadastroCliente));
+                // TODO - gravar no banco
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult carrinhoCompras()
