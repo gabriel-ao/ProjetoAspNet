@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LojaVirtualV2.Database;
+﻿using LojaVirtualV2.Database;
+using LojaVirtualV2.Repositories;
+using LojaVirtualV2.Repositories.Contracts;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace LojaVirtualV2
 {
@@ -28,13 +24,42 @@ namespace LojaVirtualV2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            /*
+             * Padrão Respository
+             */
+
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+
+            services.AddScoped<INewsletterRepository, NewsletterRepository>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+
+            // -----------
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => false;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            // -----------
+
+
+
+
+
+            //session - configuração 
+
+            services.AddMemoryCache(); // guardar os dados na memoria
+
+            services.AddSession(options=> {
+
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -60,6 +85,8 @@ namespace LojaVirtualV2
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
+
 
             app.UseMvc(routes =>
             {
