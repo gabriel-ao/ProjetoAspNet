@@ -12536,31 +12536,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabriel.oliveira\\.nuget\\packages\\": {},
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\LojaVirtualV2.csproj",
+      "projectUniqueName": "D:\\documentos\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\LojaVirtualV2.csproj",
       "projectName": "LojaVirtualV2",
-      "projectPath": "Z:\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\LojaVirtualV2.csproj",
-      "packagesPath": "C:\\Users\\gabriel.oliveira\\.nuget\\packages\\",
-      "outputPath": "Z:\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\obj\\",
+      "projectPath": "D:\\documentos\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\LojaVirtualV2.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "D:\\documentos\\GitHub\\ProjetoAspNet\\LojaVirtualV2\\LojaVirtualV2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gabriel.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.sisatec.com.br/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
