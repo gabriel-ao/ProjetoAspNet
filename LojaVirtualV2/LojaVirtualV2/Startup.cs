@@ -1,4 +1,6 @@
 ﻿using LojaVirtualV2.Database;
+using LojaVirtualV2.Libraries.Login;
+using LojaVirtualV2.Libraries.Sessao;
 using LojaVirtualV2.Repositories;
 using LojaVirtualV2.Repositories.Contracts;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -9,6 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
+
 
 namespace LojaVirtualV2
 {
@@ -28,7 +32,17 @@ namespace LojaVirtualV2
              * Padrão Respository
              */
 
+            services.AddScoped<Sessao>();
+
+            services.AddHttpContextAccessor();
+
+            services.AddScoped<LoginCliente>();
+
             services.AddScoped<IClienteRepository, ClienteRepository>();
+
+
+
+
 
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
 
@@ -37,6 +51,8 @@ namespace LojaVirtualV2
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+
 
 
             // -----------

@@ -35,7 +35,7 @@ namespace LojaVirtualV2.Repositories
 
         public Cliente Login(string Email, string Senha)
         {
-            return _banco.Clientes.Where(C => C.Email == Email && C.Senha == Senha).First();
+            return _banco.Clientes.Where(C => C.Email == Email && C.Senha == Senha).FirstOrDefault();
         }
 
         public Cliente ObterCliente(int Id)
@@ -47,5 +47,6 @@ namespace LojaVirtualV2.Repositories
         {
             return _banco.Clientes.ToList();
         }
+
     }
 }

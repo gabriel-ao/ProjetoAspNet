@@ -61,7 +61,7 @@ using LojaVirtualV2.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html lang=\"pt-br\">\r\n");
             EndContext();
             BeginContext(40, 929, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b8c31cae4ff416e93cced1c137c2b15", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "532e61f75f524e39a503b8d34b57f56c", async() => {
                 BeginContext(46, 102, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -86,7 +86,7 @@ using LojaVirtualV2.Models;
     ");
                 EndContext();
                 BeginContext(906, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4dafe005ddd64f16b6d3f98f36c4db8a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "68793cb1cc414eabaa3d594efd06990f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -120,12 +120,12 @@ using LojaVirtualV2.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(971, 2734, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd4a9deea94e4f99928fc693a81b336b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0fc1c40808442a49339a318d3d76d10", async() => {
                 BeginContext(977, 105, true);
                 WriteLiteral("\r\n    <header>\r\n        <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top bg-dark\">\r\n            ");
                 EndContext();
                 BeginContext(1082, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b198eea0b6644bc3a4e0de1f1de14960", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42cc4b1641a74a1590c94c856886ec41", async() => {
                     BeginContext(1120, 12, true);
                     WriteLiteral(" LojaVirtual");
                     EndContext();
@@ -156,7 +156,7 @@ using LojaVirtualV2.Models;
                         ");
                 EndContext();
                 BeginContext(1658, 109, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1346e5cdcc524391bac814023fb5bc93", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98c52526e0af4fbebb182cbfd93ca42c", async() => {
                     BeginContext(1692, 71, true);
                     WriteLiteral("<i class=\"fas fa-home\"></i> Home <span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -194,7 +194,7 @@ using LojaVirtualV2.Models;
                         ");
                 EndContext();
                 BeginContext(2671, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6c03e1be9fa482ab444ec6dbccfd631", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b4ca699b1a0444bb7e066bf0eed3433", async() => {
                     BeginContext(2713, 44, true);
                     WriteLiteral("<i class=\"far fa-address-book\"></i> Contato ");
                     EndContext();
@@ -216,12 +216,12 @@ using LojaVirtualV2.Models;
                 WriteLiteral("\r\n                    </li>\r\n                </ul>\r\n                ");
                 EndContext();
                 BeginContext(2829, 514, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c621b91338264aedb856ff43e7cf04d2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "822b64a922dd45ff9c338f1ed18eca91", async() => {
                     BeginContext(2868, 248, true);
                     WriteLiteral("\r\n\r\n\r\n\r\n                    <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"palavra\" aria-label=\"Search\">\r\n                    <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Pesquisa</button>\r\n                    ");
                     EndContext();
                     BeginContext(3116, 81, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ce403856fb74069b206ef67dfc93127", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd78f15b9dc54bf49521bcbfe824bac1", async() => {
                         BeginContext(3156, 37, true);
                         WriteLiteral("<i class=\"fas fa-user-alt\"></i> Login");
                         EndContext();
@@ -243,7 +243,7 @@ using LojaVirtualV2.Models;
                     WriteLiteral("\r\n                    ");
                     EndContext();
                     BeginContext(3219, 99, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ebfcc2144104122beb4ca866ff55d8d", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55725adce69b41aa9d3cd3cb62bc0f2f", async() => {
                         BeginContext(3269, 45, true);
                         WriteLiteral("<i class=\"fas fa-shopping-cart\"></i> Carrinho");
                         EndContext();

@@ -13,7 +13,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 3 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\_ViewImports.cshtml"
+#line 3 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\_ViewImports.cshtml"
 using LojaVirtualV2.Models;
 
 #line default
@@ -28,7 +28,7 @@ using LojaVirtualV2.Models;
             BeginContext(44, 2, true);
             WriteLiteral("\r\n");
             EndContext();
-#line 3 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 3 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
   
     ViewData["Title"] = "Index";
 
@@ -250,7 +250,7 @@ using LojaVirtualV2.Models;
 </main>
 ");
             EndContext();
-#line 209 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 209 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
    
 /*
  * primeiro formulario
@@ -262,7 +262,7 @@ using LojaVirtualV2.Models;
             BeginContext(11013, 4, true);
             WriteLiteral("\r\n\r\n");
             EndContext();
-#line 217 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 217 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
  using (Html.BeginForm(null, null, null, FormMethod.Post, false, new {  @action = @Url.Action("index", "home") + "#formulario" }))
 {
 
@@ -271,7 +271,7 @@ using LojaVirtualV2.Models;
             BeginContext(11152, 122, true);
             WriteLiteral("    <div class=\"container\" id=\"formulario\">\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-8 offset-sm-2\">\r\n");
             EndContext();
-#line 223 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 223 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
                  if (TempData["MSG_S"] != null)
                  {
 
@@ -280,7 +280,7 @@ using LojaVirtualV2.Models;
             BeginContext(11343, 51, true);
             WriteLiteral("                    <p class=\"alert alert-success\">");
             EndContext();
-            BeginContext(11427, 27, false);
+            BeginContext(11395, 27, false);
 #line 225 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
                                               Write(Html.Raw(TempData["MSG_S"]));
 
@@ -290,7 +290,7 @@ using LojaVirtualV2.Models;
             BeginContext(11422, 6, true);
             WriteLiteral("</p>\r\n");
             EndContext();
-#line 226 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 226 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
                  }
 
 #line default
@@ -307,7 +307,7 @@ using LojaVirtualV2.Models;
                         </div>
                         ");
             EndContext();
-            BeginContext(11946, 86, false);
+            BeginContext(11914, 86, false);
 #line 236 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
                    Write(Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } }));
 
@@ -337,7 +337,7 @@ using LojaVirtualV2.Models;
     </div>
 ");
             EndContext();
-#line 248 "D:\documentos\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
+#line 248 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Views\Home\Index.cshtml"
 }
 
 #line default
