@@ -16,5 +16,6 @@ namespace LojaVirtualV2.Database
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<NewLetterEmail> NewLetterEmail { get; set; }
+        public DbSet<Colaborador> Colaboradores { get; set; }
     }
 }

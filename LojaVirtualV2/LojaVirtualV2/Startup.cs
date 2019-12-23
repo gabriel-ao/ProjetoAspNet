@@ -39,11 +39,7 @@ namespace LojaVirtualV2
             services.AddScoped<LoginCliente>();
 
             services.AddScoped<IClienteRepository, ClienteRepository>();
-
-
-
-
-
+            services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
 
             services.Configure<CookiePolicyOptions>(options =>
@@ -106,6 +102,10 @@ namespace LojaVirtualV2
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                      name: "areas",
+                      template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
