@@ -70,6 +70,14 @@ Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Loja
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.TagHelpers.input.cache
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.TagHelpers.output.cache
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.RazorCoreGenerate.cache
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Categoria\Index.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\CadastrarNovaSenha.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\Login.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\Painel.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\RecuperarSenha.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Shared\_Layout.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\_ViewImports.g.cshtml.cs
+Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\_ViewStart.g.cshtml.cs
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Views\Home\CadastroCliente.g.cshtml.cs
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Views\Home\carrinhoCompras.g.cshtml.cs
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contato.g.cshtml.cs
@@ -85,7 +93,3 @@ Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Loja
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.dll
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.pdb
 Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csproj.CopyComplete
-Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\LojaVirtualV2.csprojAssemblyReference.cache
-Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\Login.g.cshtml.cs
-Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\RecuperarSenha.g.cshtml.cs
-Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\obj\Debug\netcoreapp2.1\Razor\Areas\Colaborador\Views\Home\CadastrarNovaSenha.g.cshtml.cs

@@ -37,10 +37,12 @@ namespace LojaVirtualV2
             services.AddHttpContextAccessor();
 
             services.AddScoped<LoginCliente>();
+            services.AddScoped<LoginColaborador>();
 
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
+            services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -108,7 +110,7 @@ namespace LojaVirtualV2
                     );
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

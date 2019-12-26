@@ -37,6 +37,8 @@ namespace LojaVirtualV2.Repositories
         public Colaborador login(string Email, string Senha)
         {
             return _banco.Colaboradores.Where(C => C.Email == Email && C.Senha == Senha).FirstOrDefault();
+            //return _banco.Colaboradores.Find(1);
+
         }
 
         public Colaborador ObterColaborador(int Id)

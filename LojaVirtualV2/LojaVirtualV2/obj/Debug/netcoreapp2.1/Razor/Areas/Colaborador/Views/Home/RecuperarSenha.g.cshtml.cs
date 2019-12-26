@@ -13,7 +13,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 3 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Areas\Colaborador\Views\_ViewImports.cshtml"
+using LojaVirtualV2.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3acf4b1b74120b76e281b017ee1062d2b8a2c805", @"/Areas/Colaborador/Views/Home/RecuperarSenha.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"816eed92de902cb8b0a899dd4f902922402c6c9f", @"/Areas/Colaborador/Views/_ViewImports.cshtml")]
     public class Areas_Colaborador_Views_Home_RecuperarSenha : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

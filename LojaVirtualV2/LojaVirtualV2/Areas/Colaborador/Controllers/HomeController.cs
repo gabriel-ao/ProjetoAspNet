@@ -1,6 +1,8 @@
-﻿using LojaVirtualV2.Libraries.Login;
+﻿using LojaVirtualV2.Libraries.Filtro;
+using LojaVirtualV2.Libraries.Login;
 using LojaVirtualV2.Repositories.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LojaVirtualV2.Areas.Colaborador.Controllers
 {
@@ -46,9 +48,12 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
             }
         }
 
-        public IActionResult Painel()
+        [ColaboradorAutorizacao]
+        public IActionResult Logout()
         {
-            return View();
+            _loginColaborador.Logout();
+            //return View(nameof(Index));
+            return RedirectToAction("login", "Home");
         }
 
 
@@ -60,5 +65,12 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
         {
             return View();
         }
+
+        [ColaboradorAutorizacao]
+        public IActionResult Painel()
+        {
+            return View();
+        }
+
     }
 }

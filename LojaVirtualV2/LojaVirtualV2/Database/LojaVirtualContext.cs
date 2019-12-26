@@ -1,9 +1,5 @@
 ﻿using LojaVirtualV2.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaVirtualV2.Database
 {
@@ -13,9 +9,9 @@ namespace LojaVirtualV2.Database
         {
 
         }
-
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<NewLetterEmail> NewLetterEmail { get; set; }
         public DbSet<Colaborador> Colaboradores { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }
