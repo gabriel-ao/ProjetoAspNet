@@ -18,8 +18,18 @@ using LojaVirtualV2.Models;
 
 #line default
 #line hidden
+#line 4 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Areas\Colaborador\Views\_ViewImports.cshtml"
+using X.PagedList.Mvc.Core;
+
+#line default
+#line hidden
+#line 5 "Z:\GitHub\ProjetoAspNet\LojaVirtualV2\LojaVirtualV2\Areas\Colaborador\Views\_ViewImports.cshtml"
+using X.PagedList;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9f2df0e19aba6ec254393b87e6f3598e4b43a625", @"/Areas/Colaborador/Views/Home/Painel.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"816eed92de902cb8b0a899dd4f902922402c6c9f", @"/Areas/Colaborador/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bff88212304e9096729373e742fb60b726a3c6f", @"/Areas/Colaborador/Views/_ViewImports.cshtml")]
     public class Areas_Colaborador_Views_Home_Painel : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
