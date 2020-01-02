@@ -1,4 +1,5 @@
 ﻿using LojaVirtualV2.Libraries.Filtro;
+using LojaVirtualV2.Libraries.Lang;
 using LojaVirtualV2.Models;
 using LojaVirtualV2.Repositories.Contracts;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +11,7 @@ using X.PagedList;
 namespace LojaVirtualV2.Areas.Colaborador.Controllers
 {
     [Area("Colaborador")]
-    //TODO - Hibilitar verificação de login
-    //[ColaboradorAutorizacao]
+    [ColaboradorAutorizacao]
     public class CategoriaController : Controller
     {
         private ICategoriaRepository _categoriaRepository;
@@ -40,7 +40,7 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
             {
                 _categoriaRepository.Cadastrar(categoria);
 
-                TempData["MSG_S"] = "Registro salvo com sucesso!";
+                TempData["MSG_S"] = Mensagem.MSG_S001;
 
                 return RedirectToAction(nameof(Index));
 
@@ -53,8 +53,9 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
         [HttpGet]
         public IActionResult Atualizar(int Id)
         {
+            var categoria = _categoriaRepository.ObterCategoria(Id);
             ViewBag.Categorias = _categoriaRepository.ObterTodosCategorias().Where(a => a.Id != Id). Select(a => new SelectListItem(a.Nome, a.Id.ToString()));
-            return View();
+            return View(categoria);
         }
 
         [HttpPost]
@@ -64,7 +65,7 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
             {
                 _categoriaRepository.Atualizar(categoria);
 
-                TempData["MSG_S"] = "Registro salvo com sucesso!";
+                TempData["MSG_S"] = Mensagem.MSG_S001;
 
                 return RedirectToAction(nameof(Index));
             }
@@ -75,7 +76,9 @@ namespace LojaVirtualV2.Areas.Colaborador.Controllers
         [HttpGet]
         public IActionResult Excluir (int Id)
         {
-            return View();
+            _categoriaRepository.Excluir(Id);
+            TempData["MSG_S"] = Mensagem.MSG_S002;
+            return RedirectToAction(nameof(Index));
         }
     }
 }

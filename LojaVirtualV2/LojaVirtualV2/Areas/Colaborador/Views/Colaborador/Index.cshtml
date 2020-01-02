@@ -1,12 +1,12 @@
-﻿@model X.PagedList.IPagedList<LojaVirtualV2.Models.Categoria>
+﻿@model X.PagedList.IPagedList<LojaVirtualV2.Models.Colaborador>
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Categoria</h1>
+<h1>Colaborador</h1>
 
 <a asp-action="Cadastrar" class="btn btn-primary">Cadastrar</a>
-<br /><br />
+<br  /><br />
 
 @if (TempData["MSG_S"] != null)
 {
@@ -22,32 +22,21 @@
                 <tr>
                     <th scope="col">@Html.DisplayNameFor(model => model.First().Id)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.First().Nome)</th>
-                    <th scope="col">@Html.DisplayNameFor(model => model.First().CategoriaPai)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => model.First().Email)</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Foreach utilizado para puxar todos os dados da pagelist -->
-                @foreach (Categoria categoria in Model)
+                @foreach (Colaborador colaborador in Model)
                 {
                     <tr>
-                        <th scope="row">@categoria.Id</th>
-                        <td>@categoria.Nome</td>
+                        <th scope="row">@colaborador.Id</th>
+                        <td>@colaborador.Nome</td>
+                        <td>@colaborador.Email</td>
                         <td>
-                            @if (categoria.CategoriaPai != null)
-                            {
-                                <span>@categoria.CategoriaPai.Id - @categoria.CategoriaPai.Nome</span>
-                            }
-                            else
-                            {
-                                <span>--</span>
-                            }
-
-
-                        </td>
-                        <td>
-                            <a asp-action="Atualizar" asp-route-id="@categoria.Id" class="btn btn-secondary">Atualizar</a>
-                            <a asp-action="Excluir" asp-route-id="@categoria.Id" class="btn btn-danger">Excluir</a>
+                            <a asp-action="Atualizar" asp-route-id="@colaborador.Id" class="btn btn-secondary">Atualizar</a>
+                            <a asp-action="Excluir" asp-route-id="@colaborador.Id" class="btn btn-danger">Excluir</a>
                         </td>
                     </tr>
                 }

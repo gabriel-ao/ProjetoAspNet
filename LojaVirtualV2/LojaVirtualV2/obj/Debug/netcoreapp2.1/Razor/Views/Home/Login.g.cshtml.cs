@@ -108,7 +108,7 @@ using LojaVirtualV2.Models;
             WriteLiteral("                        ");
             EndContext();
             BeginContext(623, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d88e5b9e915249e9bf510cb8b5680787", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03c153745d4c49e6919f747ddd039ca3", async() => {
                 BeginContext(721, 11, true);
                 WriteLiteral("Cadastre-se");
                 EndContext();
@@ -133,12 +133,12 @@ using LojaVirtualV2.Models;
             WriteLiteral("\r\n                        <h4 class=\"card-title mb-4 mt-1\">Entrar</h4>\r\n                        ");
             EndContext();
             BeginContext(832, 853, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63c716b1dcdd42cf9c1d7064ace8ff54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0c2028082ae4d339e8093da7eff300b", async() => {
                 BeginContext(852, 147, true);
                 WriteLiteral("\r\n                            <div class=\"form-group\">\r\n                                <label>Seu E-mail</label>\r\n                                ");
                 EndContext();
                 BeginContext(999, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "798250e985554bbb9d34726ee5ef8f31", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b9d57544b94d4b2395f72d6432f9f749", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -170,7 +170,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                                 ");
                 EndContext();
                 BeginContext(1337, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "72f2e0ba0c794f22b223c1529bfc65f3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7c9cf59b70fd4978bbbaa563d94f7ca9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

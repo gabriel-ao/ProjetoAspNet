@@ -1,8 +1,6 @@
 ﻿using LojaVirtualV2.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using X.PagedList;
 
 namespace LojaVirtualV2.Repositories.Contracts
 {
@@ -15,7 +13,7 @@ namespace LojaVirtualV2.Repositories.Contracts
         void Excluir(int Id);
 
         Colaborador ObterColaborador(int Id);
-        IEnumerable<Colaborador> ObterTodosColaboradores();
+        IPagedList<Colaborador> ObterTodosColaboradores(int? pagina);
 
     }
 }

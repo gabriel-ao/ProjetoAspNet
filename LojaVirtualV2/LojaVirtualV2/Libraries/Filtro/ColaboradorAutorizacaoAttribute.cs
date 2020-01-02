@@ -17,7 +17,7 @@ namespace LojaVirtualV2.Libraries.Filtro
 
             if (colaborador == null)
             {
-                context.Result = new ContentResult() { Content = "Acesso negado mother fuck!" };
+                context.Result = new RedirectToActionResult("Login", "Home", null);
 
             }
         }

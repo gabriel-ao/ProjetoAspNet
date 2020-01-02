@@ -10,6 +10,8 @@ namespace LojaVirtualV2.Models
 {
     public class Categoria
     {
+
+        [Display(Name = "Código")]
         public int Id { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_E001")]
@@ -24,6 +26,7 @@ namespace LojaVirtualV2.Models
         [MinLength(3, ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_E002")]
         public string Slug { get; set; }
 
+        [Display(Name = "Categoria Pai")]
         public int? CategoriaPaiId { get; set; }
 
 
